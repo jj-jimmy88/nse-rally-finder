@@ -358,8 +358,8 @@
 "days": 39,
 "peak": 14.7,
 "low": -21.5,
-"last_close": 153.93,
-"last_ret": -19.0,
+"last_close": 154.86,
+"last_ret": -18.5,
 "stop_day": 10,
 "home_run_day": null,
 "closed": false
@@ -408,10 +408,10 @@
 "entry_price": 145.89,
 "entry_date": "2026-09-03",
 "days": 2,
-"peak": 26.8,
+"peak": 27.5,
 "low": -0.1,
-"last_close": 177.32,
-"last_ret": 21.5,
+"last_close": 184.05,
+"last_ret": 26.2,
 "stop_day": null,
 "home_run_day": null,
 "closed": false
@@ -461,14 +461,14 @@
 "entry_date": "2026-09-04",
 "days": 1,
 "peak": 4.2,
-"low": -1.9,
-"last_close": 308.5,
-"last_ret": -0.8,
+"low": -6.4,
+"last_close": 291.05,
+"last_ret": -6.4,
 "stop_day": null,
 "home_run_day": null,
 "closed": false
 }
 ],
 "last_data_date": "2026-09-08",
-"updated_utc": "2026-09-08 07:27"
+"updated_utc": "2026-09-08 15:12"
 }
