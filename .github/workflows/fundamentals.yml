@@ -1,0 +1,22 @@
+name: Fundamentals refresh (screener.in)
+on:
+  schedule:
+    - cron: '30 2 1,16 * *'   # 1st and 16th of the month, 08:00 IST
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -q pandas numpy requests beautifulsoup4
+      - run: timeout 330m python refresh_fundamentals.py
+        continue-on-error: true
+      - run: |
+          git config user.name "rally-bot"; git config user.email "actions@users.noreply.github.com"
+          git add data/fundamentals.json
+          git diff --cached --quiet || git commit -m "Fundamentals refresh $(date -u +%F)"
+          git push

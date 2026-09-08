@@ -1,0 +1,38 @@
+name: Daily signal run
+on:
+  schedule:
+    - cron: '20 11 * * 1-5'   # 16:50 IST Mon-Fri, after the NSE close and Yahoo's end-of-day update
+  workflow_dispatch: {}
+permissions:
+  contents: write
+concurrency: daily
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: '3.11' }
+      - run: pip install -q yfinance pandas numpy requests beautifulsoup4
+      - name: Update prices (Yahoo Finance)
+        run: python update_prices.py 1mo
+      - name: Update promoter purchases (NSE) — best effort
+        continue-on-error: true
+        run: timeout 25m python update_insider.py
+      - name: Run the two rules on the latest day
+        run: python engine.py
+      - name: Build site
+        run: python build_site.py
+      - name: Commit
+        run: |
+          git config user.name "rally-bot"; git config user.email "actions@users.noreply.github.com"
+          git add -A data index.html
+          git diff --cached --quiet || git commit -m "Daily run $(date -u +%F)"
+          git push
+      - name: Email new signals (only if SMTP secrets are set)
+        if: ${{ env.SMTP_USER != '' }}
+        env:
+          SMTP_USER: ${{ secrets.GMAIL_USER }}
+          SMTP_PASS: ${{ secrets.GMAIL_APP_PASSWORD }}
+          MAIL_TO: jj.jimmy88@gmail.com
+        run: python send_mail.py
