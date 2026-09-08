@@ -14,4 +14,4 @@ Backtest (2023–26, out of sample): ~27 signals/yr, 20% reach +50%, avg +8% per
 * `fundamentals.yml` — 1st & 16th of the month: `refresh_fundamentals.py` (screener.in).
 * Dashboard: `index.html` (GitHub Pages). Machine-readable: `data/latest.json` (today's new signals), `data/signals.json` (all live signals with forward tracking).
 
-Email: set repo secrets `GMAIL_USER` and `GMAIL_APP_PASSWORD` (a Gmail app password) to have the workflow email new signals to jj.jimmy88@gmail.com.
+Notifications: on days with new signals the workflow opens a GitHub issue labelled `signal`, which GitHub emails to the repo owner (keep the repo Watched / issue notifications on). Optionally, set repo secrets `GMAIL_USER` and `GMAIL_APP_PASSWORD` (a Gmail app password) to have the workflow email new signals to jj.jimmy88@gmail.com.

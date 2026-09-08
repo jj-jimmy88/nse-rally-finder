@@ -125,7 +125,7 @@ def main():
     I=json.load(open(os.path.join(D,"insider.json"))); Fd=json.load(open(os.path.join(D,"fundamentals.json")))
     latest=dict(last_data_date=S["last_data_date"],updated_utc=S["updated_utc"],new_signals=new,
                 candidates_today=int(((P.date==last)&(P.pass_gate==True)).sum()),symbols_with_price=int((P.date==last).sum()),
-                insider_data_date=I.get("fetched"),fundamentals_date=max((v.get("fetched","") for v in Fd.values()),default=""))
+                insider_data_date=I.get("fetched"),fundamentals_date=sorted(v.get("fetched","") for v in Fd.values())[len(Fd)//2] if Fd else "")
     json.dump(latest,open(os.path.join(D,"latest.json"),"w"),indent=1)
     print(f"data through {S['last_data_date']}: {latest['symbols_with_price']} priced, {latest['candidates_today']} pass the gate, {len(new)} new signal(s):",[(n['symbol'],n['rule']) for n in new])
     return latest
