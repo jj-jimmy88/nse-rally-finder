@@ -2,9 +2,15 @@ name: Daily signal run
 on:
   schedule:
     - cron: '20 11 * * 1-5'   # 16:50 IST Mon-Fri, after the NSE close and Yahoo's end-of-day update
-  workflow_dispatch: {}
+  workflow_dispatch:
+    inputs:
+      test_notification:
+        description: 'Post a sample [TEST] issue to check the email path'
+        type: boolean
+        default: false
 permissions:
   contents: write
+  issues: write
 concurrency: daily
 jobs:
   run:
@@ -29,6 +35,11 @@ jobs:
           git add -A data index.html
           git diff --cached --quiet || git commit -m "Daily run $(date -u +%F)"
           git push
+      - name: Notify by GitHub issue (GitHub emails the owner)
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FORCE_TEST: ${{ inputs.test_notification == true && '1' || '0' }}
+        run: python notify_issue.py
       - name: Email new signals (only if SMTP secrets are set)
         if: ${{ env.SMTP_USER != '' }}
         env:
