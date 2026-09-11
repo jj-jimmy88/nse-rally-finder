@@ -1,28 +1,9 @@
 {
- "last_data_date": "2026-09-10",
- "updated_utc": "2026-09-10 15:02",
- "new_signals": [
-  {
-   "symbol": "BHAGYANGR",
-   "industry": "Copper",
-   "rule": "R-A",
-   "signal_date": "2026-09-10",
-   "signal_close": 432.2,
-   "mcap": 1297,
-   "pe": 20.9,
-   "pgrowth": 257,
-   "hi250": 1.0,
-   "lo250": 4.79,
-   "r20": 14.0,
-   "r60": 20.2,
-   "gap": 1.0,
-   "prom_buy_date": "",
-   "entry_price": null,
-   "entry_date": null
-  }
- ],
- "candidates_today": 400,
+ "last_data_date": "2026-09-11",
+ "updated_utc": "2026-09-11 15:14",
+ "new_signals": [],
+ "candidates_today": 402,
  "symbols_with_price": 2100,
- "insider_data_date": "2026-09-10",
+ "insider_data_date": "2026-09-11",
  "fundamentals_date": "2026-09-04"
 }
