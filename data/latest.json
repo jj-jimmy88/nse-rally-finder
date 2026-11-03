@@ -1,9 +1,28 @@
 {
- "last_data_date": "2026-11-02",
- "updated_utc": "2026-11-02 20:50",
- "new_signals": [],
- "candidates_today": 1,
- "symbols_with_price": 3,
- "insider_data_date": "2026-10-30",
+ "last_data_date": "2026-11-03",
+ "updated_utc": "2026-11-03 18:30",
+ "new_signals": [
+  {
+   "symbol": "MENONBE",
+   "industry": "Auto Components & Equipments",
+   "rule": "R-A",
+   "signal_date": "2026-11-03",
+   "signal_close": 321.5,
+   "mcap": 1929,
+   "pe": 43.8,
+   "pgrowth": 52,
+   "hi250": 1.0,
+   "lo250": 3.13,
+   "r20": 12.4,
+   "r60": 30.4,
+   "gap": -0.35,
+   "prom_buy_date": "",
+   "entry_price": null,
+   "entry_date": null
+  }
+ ],
+ "candidates_today": 404,
+ "symbols_with_price": 2094,
+ "insider_data_date": "2026-11-03",
  "fundamentals_date": "2026-11-01"
 }
