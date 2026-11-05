@@ -485,11 +485,11 @@
 "prom_buy_date": "",
 "entry_price": 431.75,
 "entry_date": "2026-09-11",
-"days": 35,
+"days": 36,
 "peak": 8.4,
 "low": -91.0,
-"last_close": 85.29,
-"last_ret": -80.2,
+"last_close": 81.03,
+"last_ret": -81.2,
 "stop_day": 3,
 "home_run_day": null,
 "closed": false
@@ -511,11 +511,11 @@
 "prom_buy_date": "",
 "entry_price": 438.69,
 "entry_date": "2026-09-23",
-"days": 27,
+"days": 28,
 "peak": 17.1,
-"low": -23.2,
-"last_close": 336.7,
-"last_ret": -23.2,
+"low": -24.8,
+"last_close": 330.0,
+"last_ret": -24.8,
 "stop_day": 20,
 "home_run_day": null,
 "closed": false
@@ -535,10 +535,18 @@
 "r60": 30.4,
 "gap": -0.35,
 "prom_buy_date": "",
-"entry_price": null,
-"entry_date": null
+"entry_price": 321.0,
+"entry_date": "2026-11-04",
+"days": 0,
+"peak": 1.9,
+"low": -2.6,
+"last_close": 319.85,
+"last_ret": -0.4,
+"stop_day": null,
+"home_run_day": null,
+"closed": false
 }
 ],
-"last_data_date": "2026-11-04",
-"updated_utc": "2026-11-04 18:40"
+"last_data_date": "2026-11-05",
+"updated_utc": "2026-11-05 18:47"
 }
