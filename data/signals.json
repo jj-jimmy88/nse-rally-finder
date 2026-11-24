@@ -511,14 +511,14 @@
 "prom_buy_date": "",
 "entry_price": 438.69,
 "entry_date": "2026-09-23",
-"days": 39,
+"days": 40,
 "peak": 17.1,
-"low": -36.4,
-"last_close": 279.1,
-"last_ret": -36.4,
+"low": -37.6,
+"last_close": 273.55,
+"last_ret": -37.6,
 "stop_day": 20,
 "home_run_day": null,
-"closed": false
+"closed": true
 },
 {
 "symbol": "MENONBE",
@@ -537,16 +537,34 @@
 "prom_buy_date": "",
 "entry_price": 321.0,
 "entry_date": "2026-11-04",
-"days": 11,
+"days": 12,
 "peak": 21.5,
-"low": -5.0,
-"last_close": 307.15,
-"last_ret": -4.3,
+"low": -9.7,
+"last_close": 293.55,
+"last_ret": -8.6,
 "stop_day": null,
 "home_run_day": null,
 "closed": false
+},
+{
+"symbol": "PANACHE",
+"industry": "IT Enabled Services",
+"rule": "R-A",
+"signal_date": "2026-11-23",
+"signal_close": 819.3,
+"mcap": 1311,
+"pe": 48.3,
+"pgrowth": 143,
+"hi250": 0.98,
+"lo250": 3.36,
+"r20": 25.5,
+"r60": 51.4,
+"gap": -2.0,
+"prom_buy_date": "",
+"entry_price": null,
+"entry_date": null
 }
 ],
 "last_data_date": "2026-11-23",
-"updated_utc": "2026-11-23 22:41"
+"updated_utc": "2026-11-24 21:13"
 }
