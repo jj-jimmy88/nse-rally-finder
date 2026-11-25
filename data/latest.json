@@ -1,28 +1,9 @@
 {
- "last_data_date": "2026-11-23",
- "updated_utc": "2026-11-24 21:13",
- "new_signals": [
-  {
-   "symbol": "PANACHE",
-   "industry": "IT Enabled Services",
-   "rule": "R-A",
-   "signal_date": "2026-11-23",
-   "signal_close": 819.3,
-   "mcap": 1311,
-   "pe": 48.3,
-   "pgrowth": 143,
-   "hi250": 0.98,
-   "lo250": 3.36,
-   "r20": 25.5,
-   "r60": 51.4,
-   "gap": -2.0,
-   "prom_buy_date": "",
-   "entry_price": null,
-   "entry_date": null
-  }
- ],
- "candidates_today": 397,
- "symbols_with_price": 2104,
+ "last_data_date": "2026-11-25",
+ "updated_utc": "2026-11-25 20:30",
+ "new_signals": [],
+ "candidates_today": 1,
+ "symbols_with_price": 6,
  "insider_data_date": "2026-11-23",
  "fundamentals_date": "2026-11-16"
 }
