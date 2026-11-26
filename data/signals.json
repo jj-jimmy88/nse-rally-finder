@@ -537,12 +537,12 @@
 "prom_buy_date": "",
 "entry_price": 321.0,
 "entry_date": "2026-11-04",
-"days": 12,
+"days": 13,
 "peak": 21.5,
-"low": -9.7,
-"last_close": 293.55,
-"last_ret": -8.6,
-"stop_day": null,
+"low": -16.1,
+"last_close": 289.35,
+"last_ret": -9.9,
+"stop_day": 13,
 "home_run_day": null,
 "closed": false
 },
@@ -561,10 +561,18 @@
 "r60": 51.4,
 "gap": -2.0,
 "prom_buy_date": "",
-"entry_price": null,
-"entry_date": null
+"entry_price": 819.3,
+"entry_date": "2026-11-25",
+"days": 0,
+"peak": 0.0,
+"low": -2.0,
+"last_close": 819.3,
+"last_ret": 0.0,
+"stop_day": null,
+"home_run_day": null,
+"closed": false
 }
 ],
-"last_data_date": "2026-11-25",
-"updated_utc": "2026-11-25 20:30"
+"last_data_date": "2026-11-26",
+"updated_utc": "2026-11-26 20:13"
 }
